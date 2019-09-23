@@ -33,6 +33,8 @@ sigma =20
 beta = 5 #exponential parameters
 a = 1 # pareto distribution
 weib = 1 #weibul parameter
+k = 10
+
 
 '''
 Simple RW motion with random steps
@@ -68,7 +70,6 @@ y_n =  np.cumsum(np.random.normal(mu, sigma, n))
 '''
 Now the trajectory is recorded in two arrays x2, y2
 '''
-k = 10
 X_tr = np.interp(np.arange(n * k), np.arange(n) * k, x)
 Y_tr = np.interp(np.arange(n * k), np.arange(n) * k, y)
 #print('x2 rw', x2)
@@ -78,6 +79,32 @@ X_tr2 = np.interp(np.arange(n * k), np.arange(n) * k, x_n)
 Y_tr2 = np.interp(np.arange(n * k), np.arange(n) * k, y_n)
 
 
+def generate_rand_walk(n, k, mu, sigma):
+    '''
+    Parameters of RW setting (we should be able to set any distribution)
+    
+    n= 500 #length of random walk
+    mu = 0.5 #normal distribution
+    sigma =20
+    
+    
+    beta = 5 #exponential parameters
+    a = 1 # pareto distribution
+    weib = 1 #weibul parameter
+    k - scaling parameter for trajectory coloring
+    '''
+    #distribution sets the distribution for steps
+    
+    x =  np.cumsum(np.random.normal(mu, sigma, n))
+    y =  np.cumsum(np.random.normal(mu, sigma, n))
+
+    X_tr = np.interp(np.arange(n * k), np.arange(n) * k, x)
+    Y_tr = np.interp(np.arange(n * k), np.arange(n) * k, y)
+
+    
+    return X_tr, Y_tr
+
+
 # ## Plotting random walks
 
 # In[4]:
@@ -85,7 +112,7 @@ Y_tr2 = np.interp(np.arange(n * k), np.arange(n) * k, y_n)
 
 
 '''
-plotting one RW
+plotting first RW
 '''
 
 fig, ax = plt.subplots(1, 1, figsize=(8, 8))
@@ -93,9 +120,12 @@ ax.scatter(X_tr, Y_tr, c=range(n * k), linewidths=0,
            marker='o', s=3, cmap=plt.cm.jet,) # We draw our points with a gradient of colors.
 ax.axis('equal')
 ax.set_axis_off()
-#fig.suptitle('Distribution of steps for RW a='+str(a), fontsize=16)
 fig.suptitle('Distribution of steps for RW mu='+str(mu)+' sigma= '+str(sigma), fontsize=16)
 #plt.savefig('RW_motion_steps_normal_mu'+str(mu)+'sigma'+str(mu)+'.png')
+
+'''
+plotting second RW
+'''
 
 
 fig, ax = plt.subplots(1, 1, figsize=(8, 8))
@@ -103,7 +133,6 @@ ax.scatter(X_tr2, Y_tr2, c=range(n * k), linewidths=0,
            marker='o', s=3, cmap=plt.cm.jet,) # We draw our points with a gradient of colors.
 ax.axis('equal')
 ax.set_axis_off()
-#fig.suptitle('Distribution of steps for RW a='+str(a), fontsize=16)
 fig.suptitle('Distribution of steps for RW mu='+str(mu)+' sigma= '+str(sigma), fontsize=16)
 #plt.savefig('RW_motion_steps_normal_mu'+str(mu)+'sigma'+str(mu)+'.png')
 
