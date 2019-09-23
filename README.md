@@ -1,5 +1,5 @@
 # pyTrAns package
-Python package for trajectories analysis. The package has several modules, which one can use independently from each other for
+PyTrAns (Trajectories Analysis) is python package for trajectories analysis. The package has several modules, which one can use independently from each other for
 1. generating or loading trajectories
 2. statistical analysis of trajectories (including scaling exponent estimation)
 3. classification and post-analysis of trajectories based on analysis modules
@@ -12,7 +12,8 @@ As an example we analyse trajectories:
 
 
 # Usage 
-The main functions are generating_trajectories.py, loadng_trajectories and modules 
+The main functions are generating_trajectories.py, loadng_trajectories and modules. 
+We recommend you to read more about stochastic processes analysis in the papers e.g. here https://sites.google.com/view/fellowshipresultsliubov/research-projects/random-walks-analysis-and-applications?authuser=0
 
 
 # Credits
