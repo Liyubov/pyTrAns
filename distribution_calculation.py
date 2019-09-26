@@ -4,7 +4,7 @@
 # ## Trajectories analysis: distributions of jumps
 # 
 # Calculate distribution of jumps from a given trajectory by its coordinates X(t), Y(t). 
-# We consider cases for 2-dimensions and n-dimensions.
+# We consider cases for 2-dimensions. Case of higher dimensions can be considered by analogy.
 
 # In[ ]:
 
@@ -27,7 +27,7 @@ size = 100
 data1 = np.random.random((size, size)) # for example we take random sample
 
 
-# In[3]:
+# In[1]:
 
 
 def calc_dist_highdim(point1,point2): 
@@ -53,7 +53,7 @@ def calc_distrib_highdim(vector_array):
     vector1: [0, 1, 0 ....]
     vector2: [0, 0, 0 ....]
     
-    output:     array of distances of jumps between consequent points
+    output:     array of distances of jumps between consequent points of trajectory
                 # one can also calculate distribution from initial point x0
     '''  
     arr_shape = vector_array.shape()
