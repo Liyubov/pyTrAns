@@ -61,8 +61,6 @@ fig.savefig('soln.png')
 # ## Diffusion equation 
 # 
 # In order to find corresponding diffusion equation we can write
-# the Langevin equation as a system of first-order stochastic differential equations in phase space $(q, p) ∈ R2d$. 
-# For this we introduce the momentum pt = ˙qt (we write qt = q(t), pt = p(t)).
 # 
 # Then we get 
 # 
@@ -92,9 +90,6 @@ from io import BytesIO
 from IPython.display import clear_output, Image, display
 
 
-# In[6]:
-
-
 
 
 def DisplayArray(a, fmt='jpeg', rng=[0,1]):
@@ -114,8 +109,6 @@ def make_kernel(a):
     return tf.constant(a, dtype=1)
 
 
-
-sess = tf.InteractiveSession()
 
 def simple_conv(x, k):
     """A simplified 2D convolution operation"""
@@ -176,9 +169,7 @@ step = tf.group(
 # In[14]:
 
 
-## TODO: 
-## implement diffusion with parameters from Langevin equation with random force W and parameter a
-## work in progress 
+
 
 
 
