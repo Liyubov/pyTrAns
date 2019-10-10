@@ -12,10 +12,11 @@ As an example we analyse trajectories:
 
 
 # Usage 
-The main functions are generating_trajectories.py, loadng_trajectories and modules. 
+The main functions are generating_trajectories.py, loadng_trajectories and modules for calculation of distributions etc. 
 We recommend you to read more about stochastic processes analysis in the papers e.g. here https://sites.google.com/view/fellowshipresultsliubov/research-projects/random-walks-analysis-and-applications?authuser=0
 
+(work in progress)
 
 # Credits
-
+While preparing this software some other open packages were used, which are acknoledged in notebooks and code.
 (work in progress)
