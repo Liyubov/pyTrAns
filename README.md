@@ -18,5 +18,5 @@ We recommend you to read more about stochastic processes analysis in the papers 
 (work in progress)
 
 # Credits
-While preparing this software some other open packages were used, which are acknoledged in notebooks and code.
+While preparing this software some other open packages were used, which are acknoledged in notebooks and code (under the MIT license).
 (work in progress)
