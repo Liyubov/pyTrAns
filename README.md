@@ -19,7 +19,8 @@ We recommend you to read more about stochastic processes analysis in the papers 
 
 # Types of Contribution
 
-There are multiple ways to contribute to netrd (borrowed below list from netrd):
+There are multiple ways to contribute to netrd (borrowed description of contribution from netrd).
+
 ## Report Bugs
 
 To report a bug in the package, open an issue at https://github.com/Liyubov/pyTrAns/issues
