@@ -1,7 +1,7 @@
 # pyTrAns package
 PyTrAns (Trajectories Analysis) is python package for trajectories analysis. The package has several modules, which one can use independently from each other for
-1. generating or loading trajectories
-2. statistical analysis of trajectories (including scaling exponent estimation)
+1. generating or loading trajectories `loading_trajectories.py`
+2. statistical analysis of trajectories (including scaling exponent estimation) `convex_hull.py`
 3. classification and post-analysis of trajectories based on analysis modules
 
 As an example we analyse trajectories:
