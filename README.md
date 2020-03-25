@@ -10,7 +10,8 @@ There are several types of trajectories we generate and analyse:
     from real trajectories (from observations) see description and credits in generating_trajectories file
 
 # Data 
-Some of the data for testing package can be generated (see generating or loading_trajectories files). Other possibility is to participate in surveys, such as https://competitions.codalab.org/ 
+1. Data for testing package can be generated (see generating or loading_trajectories files). 
+2. Data examples can be found on website in challanges such as https://competitions.codalab.org/ 
 
 # Usage 
 The main functions are generating_trajectories.py, loadng_trajectories and modules for calculation of distributions etc. 
