@@ -11,7 +11,7 @@ There are several types of trajectories we generate and analyse:
 
 # Data 
 1. Data for testing package can be generated (see generating or loading_trajectories files). 
-2. Data examples can be found on website in challanges such as https://competitions.codalab.org/ 
+2. Data examples can be found on website in challanges such as https://competitions.codalab.org/ and https://github.com/AnDiChallenge/ANDI_datasets
 
 # Usage 
 The main functions are generating_trajectories.py, loadng_trajectories and modules for calculation of distributions etc. 
