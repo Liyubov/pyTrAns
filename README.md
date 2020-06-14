@@ -14,7 +14,8 @@ There are several types of trajectories we generate and analyse:
 2. Data examples can be found on website in challanges such as https://competitions.codalab.org/ and https://github.com/AnDiChallenge/ANDI_datasets
 
 # Usage 
-The main functions are generating_trajectories.py, loadng_trajectories and modules for calculation of distributions etc. 
+Please follow the notebooks to see how all functions are working. 
+The main functions are: generating_trajectories.py, loadng_trajectories and modules for calculation of distributions etc. 
 We recommend you to read more about stochastic processes analysis in the papers e.g. here https://sites.google.com/view/fellowshipresultsliubov/research-projects/random-walks-analysis-and-applications?authuser=0
 
 The package is under development, for using it you need to use `import PROGRAM_NAME` e.g. `import convex_hull_analysis as *`
@@ -41,5 +42,5 @@ Look through the GitHub issues for bugs. Anything tagged with "bug" and "help wa
 Implement Features or New Methods
 
 # Credits
-While preparing this software some other open packages were used, which are acknoledged in notebooks and code (under the MIT license).
-(work in progress)
+While preparing this software some other open packages were used, which are mentioned in notebooks and code (with the MIT license).
+This is work in progress.
