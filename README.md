@@ -20,6 +20,10 @@ We recommend you to read more about stochastic processes analysis in the papers 
 
 The package is under development, for using it you need to use `import PROGRAM_NAME` e.g. `import convex_hull_analysis as *`
 
+
+## Theoretical analysis 
+Here we propose investigation of properties of random walks, such as gyration radius, msd, number of sites visited by random walk and some other properties.
+
 (work in progress)
 
 # Types of Contribution
